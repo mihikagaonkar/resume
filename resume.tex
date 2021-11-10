@@ -1,0 +1,322 @@
+%-------------------------
+% Entry-level Resume in LaTeX
+% Last Edits - July 2, 2021
+% Author : Jayesh Sanwal
+% Reach out to me on LinkedIn(/in/jsanwal), with any suggestions, ideas, etc.
+%------------------------
+
+%%-------------------------------------
+% Author Notes here -
+% 1) Change " Author+an = {N=highlight}" in "Publications.bib", where N is the number at which your name appears
+% 2) Use "\vspace" wisely, that would change spacing, and is currently being used as a hacky fix
+% 3) Do not delete the fonts in the left side
+% 4) Use the "Rich Text" feature on Overleaf - On the top panel next to source. Makes it much easier for starters on LaTeX to use this template
+% 5) Do NOT use periods at the end of bullet points, the sample text might have it
+%%-------------------------------------
+% Author Notes here -
+% 1) Shift to Class file, make changes here
+% 2) Use a fonts folder
+% 3) Incorporate Leadership & volunteering together
+% 4) Remove \vspace based 'hacky' fixes
+%%-------------------------------------
+% Add your notes/ideas here -
+% 1) 
+%%-------------------------------------
+
+\documentclass[a4,10pt]{article}
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  STARTING HERE, DO NOT TOUCH ANYTHING 
+%%%%%%% --------------------------------------------------------------------------------------
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+ \usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{tabularx}
+\hypersetup{colorlinks=true,urlcolor=black}
+\usepackage[11pt]{moresize}
+\usepackage{setspace}
+\usepackage{fontspec}
+\usepackage[inline]{enumitem}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage{anyfontsize}
+
+%%%% Set Margins
+\usepackage[margin=1cm, top=1cm]{geometry}
+
+%%%% Set Fonts
+\setmainfont[
+BoldFont=SourceSansPro-Semibold.otf, %SourceSansPro-Bold.otf
+ItalicFont=SourceSansPro-RegularIt.otf
+]{SourceSansPro-Regular.otf}
+\setsansfont{SourceSansPro-Semibold.otf}
+
+%%%% Set Page
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%%%% Set URL Style
+\urlstyle{same}
+
+%%%% Set Indentation
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%%%% Set Secondary Color
+\definecolor{UI_blue}{RGB}{32, 64, 151}
+
+%%%% Define New Commands
+\usepackage[style=nature]{biblatex}
+\addbibresource{Publications.bib}
+
+%%%% Bold Name in Publications
+\renewcommand*{\mkbibnamegiven}[1]{%
+\ifitemannotation{highlight}
+{\textbf{#1}}
+{#1}}
+
+\renewcommand*{\mkbibnamefamily}[1]{%
+\ifitemannotation{highlight}
+{\textbf{#1}}
+{#1}}
+
+%%%% Set Sections formatting
+\titleformat{\section}{
+\color{UI_blue} \scshape \raggedright \large 
+}{}{0em}{}[\vspace{-10pt} \hrulefill \vspace{-6pt}]
+
+%%%% Set Subtext Formatting
+\newcommand{\subtext}[1]{
+#1\par\vspace{-0.2cm}}
+
+\newcommand{\subtextit}[1]{\vspace{0.15cm}
+\textit{ #1 \vspace{-0.2cm}} }
+
+%%%% Set Item Spacing
+\setlist[itemize]{align=parleft,left=0pt..1em}
+
+%%%% New Itemize "Zitemize" Formatting - tighter spacing than itemize
+\newenvironment{zitemize}{
+\begin{itemize}\itemsep2pt \parskip0pt \parsep1pt}
+{\end{itemize}\vspace{-0.5cm}}
+
+
+%%%% Define Skills Bold Formatting
+\newcommand{\hskills}[1]{
+\textbf{\bfseries #1} }
+
+%%%% Set Subsection formatting
+\titleformat{\subsection}{\vspace{-0.1cm} 
+\bfseries \fontsize{11pt}{2cm}}{}{0em}{}[\vspace{-0.2cm}]
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  END OF "DO NOT TOUCH" REGION
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+
+\begin{document}
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  HEADER
+%%%%%%% --------------------------------------------------------------------------------------
+\begin{center}
+    \begin{minipage}[b]{0.24\textwidth}
+            \large 9819222032 \\
+            \large \href{mailto:mihika831@gmail.com}{mihika831@gmail.com} 
+    \end{minipage}% 
+    \begin{minipage}[b]{0.44\textwidth}
+            \centering
+            {\HUGE Mihika Gaonkar} \\ %
+            \vspace{0.1cm}
+            {\color{UI_blue} \Large{}} 
+    \end{minipage}% 
+    \begin{minipage}[b]{0.30\textwidth}
+            \flushright \large  %Willing to Relocate
+            {\href{https://www.linkedin.com/in/mihikagaonkar/}{linkedin.com/in/mihikagaonkar} } \\
+            \href{https://github.com/mihikagaonkar/}{GitHub:mihikagaonkar}
+    \end{minipage}   
+    
+\vspace{-0.15cm} 
+% {\color{UI_blue} \hrulefill}
+\end{center}
+
+
+
+
+
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  EDUCATION
+%%%%%%% --------------------------------------------------------------------------------------
+\section{Education }
+\subsection*{Bachelor of Engineering, Computer Engineering\\ {\normalsize \normalfont Thadomal Shahani Engineering\\ CGPA: 9.33/10.00(Sem-IV)} \hfill  2019 ---  2023} 
+\vspace{0.2cm}
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  WORK EXPERIENCE
+%%%%%%% --------------------------------------------------------------------------------------
+\section{Work Experience}
+
+%%%%%%% ----------------------------------- Role 4 ----------------------------------- %%%%%%%
+\subsection*{Data Science Intern \hfill Jun 2021 --- present} 
+\subtext{Worley India Private Limited \hfill Mumbai} 
+    \begin{zitemize}
+        \item Worked on image preprocessing using OpenCV
+        \item Compared different OCR packages to choose the correct fit for the project.
+    \end{zitemize}
+
+
+%%%%%%% ----------------------------------- Role 5 ----------------------------------- %%%%%%%
+% \subsection*{YYY Intern \hfill Mon yyyy --- Mon yyyy} 
+% \subtext{Add Company Name Here \hfill Location} 
+%     \begin{zitemize}
+%         \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet justo porta magna ultrices ultricies. Nam sem augue, lobortis sit amet venenatis sed, rutrum vel dui. Fusce mauris libero, ultrices quis convallis venenatis, malesuada at neque. Vivamus facilisis metus enim, convallis egestas dui dictum vel. Integer lacus nisl, molestie vitae bibendum eget, finibus vitae ligula. 
+%         \item Duis fermentum arcu vitae faucibus cursus. Praesent aliquet id risus dictum lobortis. Donec varius tincidunt aliquet.Nulla congue nulla sed accumsan consequat. Pellentesque facilisis cursus faucibus.
+%     \end{zitemize}
+
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  ACADEMIC PROJECTS
+%%%%%%% --------------------------------------------------------------------------------------
+\section{Academic Projects} %% (Or "Research Experience", select as appropriate)
+
+%%% ----- Best way to write items (Credit - FAANGPath)
+        % \item Achieved X\% growth for XYZ using A, B, and C skills.
+        % \item Led XYZ which led to X\% of improvement in ABC
+        % \item Developed XYZ that did A, B, and C using X, Y, and Z. 
+
+
+%%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
+\subsection*{Invisibility Cloak | OpenCV, Flask, HTML, CSS, Bootstrap} 
+    \begin{zitemize}
+        \item An application by which the user appears to be invisible on using a cloth of a specific colour.
+        \item Added option to enter the RGB value of the colour of the cloth available.
+    \end{zitemize}
+
+
+%%%%%%% ----------------------------------- Role 2 ----------------------------------- %%%%%%%
+\subsection*{FakeStat | sklearn, numpy, tweepy, django, HTML, CSS } 
+    \begin{zitemize}
+        \item A fake news detection application trained using Random Forest model.
+        \item Added comparison between results of Random Forest, Decision Tree and Logistic Regression algorithms obtained on the dataset.
+        \item Made a fake news detecting twitter bot which write a comment to the tweet made specifying whether the news in the tweet is fake or not.
+    \end{zitemize}
+
+
+%%%%%%% ----------------------------------- Role 3 ----------------------------------- %%%%%%%
+\subsection*{ TourIt | HTML, CSS, JavaScript, Django} 
+    \begin{zitemize}
+        \item A  web  application  providing  particulars  about  major attractions in Mumbai.
+        \item Designed and coded an interactive interface for the web application.
+    \end{zitemize}
+
+
+
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  AREAS OF EXPERTISE
+%%%%%%% --------------------------------------------------------------------------------------
+% \section{Areas of Expertise}
+% \begin{center}
+%     \begin{minipage}[t]{0.35\textwidth}
+%             \begin{zitemize}
+%                 \item Keyword 1
+%                 \item Keyword 2
+%             \end{zitemize}
+%     \end{minipage}%
+%     \begin{minipage}[t]{0.32\textwidth}
+%             \begin{zitemize}
+%                 \item Keyword 3
+%                 \item Keyword 4
+%             \end{zitemize}
+%     \end{minipage}%
+%     \begin{minipage}[t]{0.3\textwidth}
+%             \begin{zitemize}
+%                 \item Keyword 4
+%                 \item Keyword 5
+%             \end{zitemize}
+%     \end{minipage}
+% \end{center}
+
+
+
+%%%%%%% --------------------------------------------------------------------------------------    
+%%%%%%%  SKILLS
+%%%%%%% --------------------------------------------------------------------------------------
+\section{Technical Skills}
+\begin{tabular}{p{11em} p{1em} p{43em}}
+\hskills{Programming Languages }&  &  Python, C \\
+\hskills{Web} &  & HTML, CSS, Django, Flask \\
+\hskills{Libraries} &  & TensorFlow, sklearn, numpy, pandas \\
+\hskills{Tools} &  & Git, GitHub \\
+
+\end{tabular}
+\vspace{-0.2cm}
+
+
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  VOLUNTEER EXPERIENCE
+%%%%%%% --------------------------------------------------------------------------------------
+\section{Volunteer (or LEADERSHIP) Experience}
+
+%%%%%% ----------------------------------- Role 6 ----------------------------------- %%%%%%%
+\subsection*{Volunteer, Vatsalya Trust, Mumbai \hfill Apr 2017 --- present} 
+    \begin{zitemize}
+            \item  Taught Mathematics, Science and English to 9th and 10th standard students.
+    \end{zitemize}
+
+
+%%%%%% ----------------------------------- Role 6 ----------------------------------- %%%%%%%
+\subsection*{NSS Volunteer \hfill 2020-2021} 
+    \begin{zitemize}
+            \item Participated in the various events organized such as Awareness Creation Drive and making quality academic content for children of rural areas
+    \end{zitemize}
+\subsection*{Editor, TSEC Digital Diary(College Magazine) \hfill 2020-2021} 
+    \begin{zitemize}
+            \item Created content and proof read articles for the magazine.
+    \end{zitemize}
+\subsection*{Content Writer/Editor, MCL TSEC \hfill 2021-present} 
+    \begin{zitemize}
+            \item Created content for and managed official social media accounts of the college.
+    \end{zitemize}
+
+
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  PUBLICATIONS
+%%%%%%% --------------------------------------------------------------------------------------
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5em}
+% \nocite{*}
+% \printbibliography[heading=none]
+% \vspace{-0.4cm}
+
+
+
+% %%%%%%% --------------------------------------------------------------------------------------
+% %%%%%%%  AWARDS & HONORS
+% %%%%%%% --------------------------------------------------------------------------------------
+% \section{Awards \& Honors}
+% \vspace{-0.2cm}
+% \begin{tabular}[t]{ p{4em} p{50em}}
+% \hskills{yyyy} & Award 1 (\hskills{\$xxxxxx}); Award 2 (\hskills{\$xxxxxx}); Award 3 (\hskills{\$xxxxxx}); Award 4 (\hskills{\$xxxxxx}); Award 5 (\hskills{\$xxxxxx}) \\ % 
+% \hskills{yyyy} & Award 6 (\hskills{\$xxxxxx}); Award 7 (\hskills{\$xxxxxx}); Award 8 (\hskills{\$xxxxxx}) \\
+% \end{tabular} 
+
+%%%%%%% ---------------------------- END DOC HERE ---------------------------- %%%%%%% 
+\end{document}
