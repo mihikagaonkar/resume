@@ -36,13 +36,15 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage[hidelinks]{hyperref}
+\usepackage{xcolor} 
 \usepackage{fancyhdr}
 \usepackage{multicol}
 \usepackage{hyperref}
 \usepackage{csquotes}
 \usepackage{tabularx}
-\hypersetup{colorlinks=true,urlcolor=black}
+\hypersetup{colorlinks=true,urlcolor={UI_blue}}
 \usepackage[11pt]{moresize}
+\usepackage{fontawesome5}
 \usepackage{setspace}
 \usepackage{fontspec}
 \usepackage[inline]{enumitem}
@@ -77,7 +79,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
 
 %%%% Set Secondary Color
 \definecolor{UI_blue}{RGB}{32, 64, 151}
-
+\definecolor{light_blue}{RGB}{129,155,228}
 %%%% Define New Commands
 \usepackage[style=nature]{biblatex}
 \addbibresource{Publications.bib}
@@ -94,9 +96,10 @@ ItalicFont=SourceSansPro-RegularIt.otf
 {#1}}
 
 %%%% Set Sections formatting
+
 \titleformat{\section}{
-\color{UI_blue} \scshape \raggedright \large 
-}{}{0em}{}[\vspace{-10pt} \hrulefill \vspace{-6pt}]
+ \scshape \raggedright \large \color{UI_blue}
+}{}{0em}{}[\vspace{-10pt} \hrulefill \vspace{-10pt}]
 
 %%%% Set Subtext Formatting
 \newcommand{\subtext}[1]{
@@ -111,7 +114,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
 %%%% New Itemize "Zitemize" Formatting - tighter spacing than itemize
 \newenvironment{zitemize}{
 \begin{itemize}\itemsep2pt \parskip0pt \parsep1pt}
-{\end{itemize}\vspace{-0.5cm}}
+{\end{itemize}\vspace{-0.7cm}}
 
 
 %%%% Define Skills Bold Formatting
@@ -119,6 +122,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
 \textbf{\bfseries #1} }
 
 %%%% Set Subsection formatting
+
 \titleformat{\subsection}{\vspace{-0.1cm} 
 \bfseries \fontsize{11pt}{2cm}}{}{0em}{}[\vspace{-0.2cm}]
 
@@ -133,26 +137,42 @@ ItalicFont=SourceSansPro-RegularIt.otf
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%%  HEADER
 %%%%%%% --------------------------------------------------------------------------------------
+
+
+
+
 \begin{center}
-    \begin{minipage}[b]{0.24\textwidth}
-            \large 9819222032 \\
-            \large \href{mailto:mihika831@gmail.com}{mihika831@gmail.com} 
-    \end{minipage}% 
-    \begin{minipage}[b]{0.44\textwidth}
-            \centering
-            {\HUGE Mihika Gaonkar} \\ %
-            \vspace{0.1cm}
-            {\color{UI_blue} \Large{}} 
-    \end{minipage}% 
-    \begin{minipage}[b]{0.30\textwidth}
-            \flushright \large  %Willing to Relocate
-            {\href{https://www.linkedin.com/in/mihikagaonkar/}{linkedin.com/in/mihikagaonkar} } \\
-            \href{https://github.com/mihikagaonkar/}{GitHub:mihikagaonkar}
-    \end{minipage}   
-    
-\vspace{-0.15cm} 
-% {\color{UI_blue} \hrulefill}
+    {\HUGE \scshape Mihika Gaonkar} \\ \vspace{1pt}
+    \large
+    \faGlobe \href{https://mihikagaonkar.me}{\raisebox{-0.1\height}\ mihikagaonkar.me} ~
+    \faGithub \href{https://github.com/mihikagaonkar}{\raisebox{-0.2\height}\ mihikagaonkar} ~
+    \faLinkedin \href{https://linkedin.com/in/mihikagaonkar}{\raisebox{-0.2\height}\ mihikagaonkar} ~
+    \faMedium \href{https://medium.com/@mihikagaonkar}{\raisebox{-0.2\height}\ mihikagaonkar} ~
+    \faEnvelope \href{mailto:mihika831@gmail.com}{\raisebox{-0.2\height}\  mihika831@gmail.com}
+    \vspace{-13pt}
 \end{center}
+% \begin{center}
+%     \begin{minipage}[b]{0.24\textwidth}
+%             \large \href{mailto:mihika831@gmail.com}{mihika831@gmail.com} \\
+%             \large \href{https://mihikagaonkar.me/}
+%             {mihikagaonkar.me} 
+%     \end{minipage}% 
+%     \begin{minipage}[b]{0.44\textwidth}
+%             \centering
+%             {\HUGE Mihika Gaonkar} \\ %
+%             \vspace{0.1cm}
+%             {\color{UI_blue} \Large{}} 
+%     \end{minipage}% 
+%     \begin{minipage}[b]{0.30\textwidth}
+%             \flushright \large  %Willing to Relocate
+%             {\href{https://www.linkedin.com/in/mihikagaonkar/}{linkedin.com/in/mihikagaonkar} } \\
+%             \href{https://github.com/mihikagaonkar/}{GitHub:mihikagaonkar}
+%             \href{	https://medium.com/@mihikagaonkar}{Medium:mihikagaonkar}
+%     \end{minipage}   
+    
+% \vspace{-0.15cm} 
+% % {\color{UI_blue} \hrulefill}
+% \end{center}
 
 
 
@@ -163,8 +183,27 @@ ItalicFont=SourceSansPro-RegularIt.otf
 %%%%%%%  EDUCATION
 %%%%%%% --------------------------------------------------------------------------------------
 \section{Education }
-\subsection*{Bachelor of Engineering, Computer Engineering\\ {\normalsize \normalfont Thadomal Shahani Engineering\\ CGPA: 9.47/10.00(Sem-V)} \hfill  2019 ---  2023 (expected)} 
-\vspace{0.2cm}
+\subsection*{Bachelor of Engineering in Computer Engineering \hfill 2019 ---  2023 (expected) \\ {\normalsize \normalfont University of Mumbai - CGPA: 9.24/10 (Sem-VI) }   } 
+\vspace{0.1cm}
+\subsection*{Higher Secondary Certificate (12th grade) \hfill  2019 \\ {\normalsize \normalfont Pace Junior Science College - Percentage: 79.4\%}  } 
+\vspace{0.1cm}
+\subsection*{Secondary School Certificate (10th grade) \hfill 2017\\ {\normalsize \normalfont Auxilium Convent High School -  Percentage: 94\% } \hfill } 
+\vspace{0.0cm}
+
+
+%%%%%%% --------------------------------------------------------------------------------------    
+%%%%%%%  SKILLS
+%%%%%%% --------------------------------------------------------------------------------------
+\section{Technical Skills}
+\begin{tabular}{p{11em} p{1em} p{43em}}
+\hskills{Programming Languages }&  &  Python, C, Java \\
+\hskills{Libraries/Frameworks} &  & TensorFlow, scikit-learn, NumPy, pandas, Matplotlib, BeautifulSoup, OpenCV, NLTK \\
+\hskills{Tools/Platforms} &  & Jupyter Notebook, Google Colab, Power BI, Google Data Studio, Git, GitHub \\
+\hskills{Web Technologies} &  & HTML, CSS, Django, Flask \\
+\hskills{Databases} &  & MySQL, PostgreSQL, SQLite \\
+
+\end{tabular}
+\vspace{-0.4cm}
 
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%%  WORK EXPERIENCE
@@ -173,27 +212,22 @@ ItalicFont=SourceSansPro-RegularIt.otf
 
 %%%%%%% ----------------------------------- Role 4 ----------------------------------- %%%%%%%
 \subsection*{Data Science Intern \hfill Jun 2021 --- Sep 2021} 
-\subtext{Worley India Private Limited \hfill Mumbai} 
+\subtext{Worley India Private Limited \hfill Mumbai, India} 
     \begin{zitemize}
-        \item Worked on image preprocessing using OpenCV
-        \item Worked with pytesseract and Azure OCR for Optical Character Recognition.
-        \item Tested the web based tool to ensure a smooth experience.
+        \item Worked on image preprocessing using OpenCV.
+        \item Worked with Pytesseract and Microsoft Azure OCR for Optical Character Recognition.
+        \item Tested the web based tool to ensure a smooth user experience.
     \end{zitemize}
+\vspace{-0.2cm}
 
 
-%%%%%%% ----------------------------------- Role 5 ----------------------------------- %%%%%%%
-% \subsection*{YYY Intern \hfill Mon yyyy --- Mon yyyy} 
-% \subtext{Add Company Name Here \hfill Location} 
-%     \begin{zitemize}
-%         \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet justo porta magna ultrices ultricies. Nam sem augue, lobortis sit amet venenatis sed, rutrum vel dui. Fusce mauris libero, ultrices quis convallis venenatis, malesuada at neque. Vivamus facilisis metus enim, convallis egestas dui dictum vel. Integer lacus nisl, molestie vitae bibendum eget, finibus vitae ligula. 
-%         \item Duis fermentum arcu vitae faucibus cursus. Praesent aliquet id risus dictum lobortis. Donec varius tincidunt aliquet.Nulla congue nulla sed accumsan consequat. Pellentesque facilisis cursus faucibus.
-%     \end{zitemize}
+
 
 
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%%  ACADEMIC PROJECTS
 %%%%%%% --------------------------------------------------------------------------------------
-\section{Academic Projects} %% (Or "Research Experience", select as appropriate)
+\section{Projects} %% (Or "Research Experience", select as appropriate)
 
 %%% ----- Best way to write items (Credit - FAANGPath)
         % \item Achieved X\% growth for XYZ using A, B, and C skills.
@@ -202,47 +236,59 @@ ItalicFont=SourceSansPro-RegularIt.otf
 
 
 %%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
-\subsection*{OTC CatchUp Analysis Dashboard | Power BI, Google Data Studio, Beautiful Soup, pandas \hfill \href{https://github.com/mihikagaonkar/OTC-Dashboard/}{Code}
-| \href{https://mihikagaonkar.github.io/OTC-Dashboard/data_studio}{Demo}}
+\subsection*{Vulnerability Detection in Source Code | TensorFlow, NumPy, GloVe model \hfill Aug 2022 --- present}
     \begin{zitemize}
+    \item An application to detect vulnerabilities such as SQL Injections and Cross Site Scripting attacks in source code.
+     \item Cleaned and vectorized data using GloVe model.
+        \item Trained a Convolutional Neural Network on source code snippets.
+       
+    \end{zitemize}
+%%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
+\subsection*{OTC CatchUp Analysis Dashboard | Power BI, Google Data Studio, Beautiful Soup, pandas \hfill 
+Feb 2022 --- Mar 2022}
+    \begin{zitemize}
+    \item A visualization dashboard to analyze OTC CatchUps --- online technical discussions of an open-to-all community.
      \item Scraped and cleaned data to present it in relevant format.
         \item Analyzed data using data visualization tools and derived results.
-       
+       \item \href{https://github.com/mihikagaonkar/OTC-Dashboard/}{Code}
+| \href{https://mihikagaonkar.github.io/OTC-Dashboard/data_studio}{Demo}
     \end{zitemize}
 %%%%%%% ----------------------------------- Role 2 ----------------------------------- %%%%%%%
-\subsection*{Book recommendation system | Flask, numpy, sklearn, Elasticsearch, BeautifulSoup, HTML, CSS  \hfill \href{https://github.com/mihikagaonkar/book-recommender-system}{Code}
+\subsection*{Book Recommendation System | Flask, NumPy, scikit-learn, Elasticsearch, BeautifulSoup, HTML, CSS  \hfill Nov 2021 --- Jan 2022
 }
     \begin{zitemize}
-     \item Scraped  \href{https://www.goodreads.com/}{goodreads} to create the dataset.
+    \item A web application which recommends books based on already liked books by the user.
+     \item Scraped  Goodreads to create the dataset.
         \item Used cosine similarity to generate Content Based Recommendations.
         \item Used Elasticsearch to make faster searches.
-       
+       \item \href{https://github.com/mihikagaonkar/book-recommender-system}{Code}
     \end{zitemize}
 %%%%%%% ----------------------------------- Role 3 ----------------------------------- %%%%%%%
-\subsection*{Invisibility Cloak | OpenCV, Flask, HTML, CSS, Bootstrap} 
+\subsection*{FakeStat | scikit-learn, NumPy, Tweepy, Django, HTML, CSS \hfill Jan 2021 --- Mar 2021} 
+    \begin{zitemize}
+        \item A web application and a Twitter bot to detect fake news using Random Forest model with an accuracy of 94\%.
+        \item Performed a comparative study of Random Forest, Decision Tree and Logistic Regression on the data.
+        \item The Twitter bot writes a comment to the Tweet made specifying whether the news in the Tweet is fake or not.
+        
+        \item \href{https://github.com/mihikagaonkar/FakeStat}{Code}
+    \end{zitemize}
+\subsection*{Invisibility Cloak | OpenCV, Flask, HTML, CSS, Bootstrap \hfill Oct 2020 --- Dec 2020} 
     \begin{zitemize}
         \item An application by which the user appears to be invisible on using a cloth of a specific colour.
-        \item Added option to enter the RGB value of the colour of the cloth available.
+        \item Supports option to enter the RGB value of the colour of the cloth.
     \end{zitemize}
 
 
 %%%%%%% ----------------------------------- Role 4 ----------------------------------- %%%%%%%
-\subsection*{FakeStat | sklearn, numpy, Tweepy, Django, HTML, CSS \hfill \href{https://github.com/mihikagaonkar/FakeStat}{Code}} 
-    \begin{zitemize}
-        \item A fake news detection application trained using Random Forest model.
-        \item Added comparison between results of Random Forest, Decision Tree and Logistic Regression algorithms obtained on the \href{https://www.kaggle.com/shubh0799/fake-news}{dataset}.
-        \item Made a fake news detecting twitter bot which writes a comment to the tweet made specifying whether the news in the tweet is fake or not.
-        \item Added top news section using the gnews library.
-    \end{zitemize}
+
 
 %%%%%%% ----------------------------------- Role 5 ----------------------------------- %%%%%%%
-\subsection*{ AuctionHub | HTML, CSS, Bootstrap, JavaScript, Django \hfill \href{https://github.com/mihikagaonkar/tourit}{Code}} 
-    \begin{zitemize}
-        \item A  web  application  for users to buy and sell products and obtain the optimal price.
-        \item Built a CRUD application along with authentication.
-        \item Added options to bid for products and filter products by category.
-        \item Integrated the razorpay payment gateway.
-    \end{zitemize}
+% \subsection*{ AuctionHub | HTML, CSS, Bootstrap, JavaScript, Django \hfill \href{https://github.com/mihikagaonkar/tourit}{Code}} 
+%     \begin{zitemize}
+%         \item A  CRUD web  application  for users to auction products.
+%         \item Added options to bid for products and filter products by category.
+%         \item Integrated the Razorpay payment gateway.
+%     \end{zitemize}
 
 
 
@@ -276,50 +322,35 @@ ItalicFont=SourceSansPro-RegularIt.otf
 
 
 
-%%%%%%% --------------------------------------------------------------------------------------    
-%%%%%%%  SKILLS
-%%%%%%% --------------------------------------------------------------------------------------
-\section{Technical Skills}
-\begin{tabular}{p{11em} p{1em} p{43em}}
-\hskills{Programming Languages }&  &  Python, C \\
-\hskills{Web} &  & HTML, CSS, Django, Flask \\
-\hskills{Libraries} &  & TensorFlow, sklearn, numpy, pandas, BeautifulSoup \\
-\hskills{Tools} &  & Git, GitHub \\
-
-\end{tabular}
-\vspace{-0.2cm}
 
 
 
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%%  VOLUNTEER EXPERIENCE
 %%%%%%% --------------------------------------------------------------------------------------
-\section{Volunteer (or LEADERSHIP) Experience}
+\section{Co-curricular activities }
 
 %%%%%% ----------------------------------- Role 6 ----------------------------------- %%%%%%%
-\subsection*{Core Team Member, GDSC TSEC \hfill 2021-2022} 
+\subsection*{Amazon ML Summer School \hfill Jul 2022} 
     \begin{zitemize}
-            \item Participated in organizing events for students to learn new tools and technologies.
+            \item Selected for the program which covered 8 Machine Learning topics including Probabilistic Graphical Models \newline and Causal Inferencing.
     \end{zitemize}
-\subsection*{Editor, TSEC Digital Diary(College Magazine) \hfill 2020-2021} 
+\subsection*{Core Team Member, GDSC TSEC \hfill 2021 --- 2022} 
+    \begin{zitemize}
+            \item Organized events for students to learn new tools and technologies.
+    \end{zitemize}
+
+\subsection*{Editor, TSEC Digital Diary (College Magazine) \hfill 2020 --- 2021} 
     \begin{zitemize}
             \item Created content and proof read articles for the magazine.
     \end{zitemize}
-\subsection*{Content Writer/Editor, MCL TSEC \hfill 2021-2022} 
+
+\subsection*{Volunteer, Vatsalya Trust, Mumbai \hfill  2017 --- present} 
     \begin{zitemize}
-            \item Created content for and managed official social media accounts of the college.
-    \end{zitemize}
-\subsection*{Volunteer, Vatsalya Trust, Mumbai \hfill Apr 2017 --- present} 
-    \begin{zitemize}
-            \item  Taught Mathematics, Science and English to 9th and 10th standard students.
+            \item  Taught Mathematics, Science and English to 9th and 10th grade students.
     \end{zitemize}
 
 
-%%%%%% ----------------------------------- Role 6 ----------------------------------- %%%%%%%
-\subsection*{NSS Volunteer \hfill 2020-2021} 
-    \begin{zitemize}
-            \item Participated in the various events organized such as Awareness Creation Drive and making quality academic content for children of rural areas
-    \end{zitemize}
 
 
 
