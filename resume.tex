@@ -53,14 +53,14 @@
 \usepackage{anyfontsize}
 
 %%%% Set Margins
-\usepackage[margin=1cm, top=1cm]{geometry}
+\usepackage[margin=2cm, top=2cm]{geometry}
 
 %%%% Set Fonts
 \setmainfont[
-BoldFont=SourceSansPro-Semibold.otf, %SourceSansPro-Bold.otf
-ItalicFont=SourceSansPro-RegularIt.otf
-]{SourceSansPro-Regular.otf}
-\setsansfont{SourceSansPro-Semibold.otf}
+BoldFont=times new roman bold.ttf, %SourceSansPro-Bold.otf
+ItalicFont=times new roman italic.ttf
+]{times new roman.ttf}
+\setsansfont{times new roman bold.ttf}
 
 %%%% Set Page
 \pagestyle{fancy}
@@ -98,8 +98,8 @@ ItalicFont=SourceSansPro-RegularIt.otf
 %%%% Set Sections formatting
 
 \titleformat{\section}{
- \scshape \raggedright \large \color{UI_blue}
-}{}{0em}{}[\vspace{-10pt} \hrulefill \vspace{-10pt}]
+ \scshape \raggedright \large 
+}{}{0em}{}[\vspace{-10pt}\bfseries \hrulefill \vspace{-10pt}]
 
 %%%% Set Subtext Formatting
 \newcommand{\subtext}[1]{
@@ -142,13 +142,11 @@ ItalicFont=SourceSansPro-RegularIt.otf
 
 
 \begin{center}
-    {\HUGE \scshape Mihika Gaonkar} \\ \vspace{5pt}
-    \large
-    \faGlobe \href{https://mihikagaonkar.me}{\raisebox{-0.1\height}\ mihikagaonkar.me} ~~~
-    \faGithub \href{https://github.com/mihikagaonkar}{\raisebox{-0.2\height}\ mihikagaonkar} ~~~
-    \faLinkedin \href{https://linkedin.com/in/mihikagaonkar}{\raisebox{-0.2\height}\ mihikagaonkar} ~~~
-    \faMedium \href{https://medium.com/@mihikagaonkar}{\raisebox{-0.2\height}\ mihikagaonkar} ~~~
-    \faEnvelope \href{mailto:mihika831@gmail.com}{\raisebox{-0.2\height}\  mihika831@gmail.com}
+    {\HUGE \scshape \textbf{Mihika Gaonkar} } \\ \vspace{5pt}
+     \color{UI_blue}{\raisebox{-0.1\height}\ (213) 725-1193} ~~~
+    \href{https://github.com/mihikagaonkar}{\raisebox{-0.2\height}\ github.com/mihikagaonkar} ~~~
+    \href{https://linkedin.com/in/mihikagaonkar}{\raisebox{-0.2\height}\ linkedin.com/in/mihikagaonkar} ~~~
+    \href{mailto:mihikapr@usc.edu}{\raisebox{-0.2\height}\  mihikapr@usc.edu}
     \vspace{-13pt}
 \end{center}
 
@@ -161,48 +159,50 @@ ItalicFont=SourceSansPro-RegularIt.otf
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%%  EDUCATION
 %%%%%%% --------------------------------------------------------------------------------------
-\vspace{2pt}
-\section{Education}
-    \vspace{2pt}
-    \begin{itemize}[leftmargin=-0in,label={}]
-        {\item{
-            \begin{tabular}{ l@{\hskip 0.2in} l@{\hskip 0.2in} l@{\hskip 0.2in} l@{\hskip 0.2in} l }
-                 \textbf{Qualification} & \textbf{Institution} & \textbf{University} & \textbf{Score} & \textbf{Year} \\ 
-                 BE(Computer Engineering)  & Thadomal Shahani Engineering College & University of Mumbai & 9.27/10 (Sem-VI) & 2023(exp)\\
-                 HSC (12th grade) & Pace Junior Science College & State Board of Maharashtra & 79.4 \% & 2019\\
-                 SSC (10th grade) & Auxilium Convent High School & State Board of Maharashtra & 94 \% & 2017
-            \end{tabular}
-        }}
-    \end{itemize}
-\vspace{-20pt}
+\vspace{-0.3cm}
+\section{\textbf{Education}}
+    \subsection*{University of Southern California
+    \hfill \normalsize \textbf{Aug 2023-present}} 
+
+    \begin{zitemize}
+        \item Master of Science in Computer Science-Artificial Intelligence 
+        \item Relevant Coursework: Foundations of Artificial Intelligence, Applied Natural Language Processing
+    \end{zitemize}
+    \vspace{0.1cm}
+    \subsection*{University of Mumbai - Thadomal Shahani Engineering College\hfill \normalsize \textbf{Aug 2019-May 2023}} 
+
+    \begin{zitemize}
+        
+        \item Bachelor of Engineering in Computer Engineering \hfill CGPA: 9.1
+        \item Relevant Course work: Python Programming, Probabilistic Graphical Methods, Artificial Intelligence, Machine Learning, Deep Learning, Quantitative Analysis
+    \end{zitemize}
+% \vspace{-0.2cm}
+% \vspace{-0.9 cm}
 %%%%%%% --------------------------------------------------------------------------------------    
 %%%%%%%  SKILLS
 %%%%%%% --------------------------------------------------------------------------------------
-\section{Technical Skills}
-\begin{tabular}{p{11em} p{1em} p{43em}}
-\hskills{Programming Languages }&  &  Python, C, Java \\
-\hskills{Libraries/Frameworks} &  & TensorFlow, scikit-learn, NumPy, pandas, Matplotlib, Beautiful Soup, OpenCV, NLTK \\
-\hskills{Tools/Platforms} &  & Jupyter Notebook, Google Colab, Power BI, Google Data Studio, Git, GitHub \\
-\hskills{Web Technologies} &  & HTML, CSS, Django, Flask \\
-\hskills{Databases} &  & MySQL, PostgreSQL, SQLite \\
+\section{\textbf{Technical Skills}}
+\hskills{Programming Languages }:  Python, C, Java \\
+\hskills{Libraries/Frameworks}: TensorFlow, scikit-learn, NumPy, pandas, Matplotlib, Beautiful Soup, OpenCV, NLTK \\
+\hskills{Tools/Platforms}: Jupyter Notebook, Google Colab, Power BI, Google Data Studio, Git, GitHub \\
+\hskills{Web Technologies}: HTML, CSS, Django, Flask \\
+\hskills{Databases}: MySQL, PostgreSQL, SQLite \\
 
-\end{tabular}
-\vspace{-0.4cm}
+\vspace{-0.5cm}
 
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%%  WORK EXPERIENCE
 %%%%%%% --------------------------------------------------------------------------------------
-\section{Work Experience}
+\section{\textbf{Work Experience}}
     \vspace{2pt}
 %%%%%%% ----------------------------------- Role 4 ----------------------------------- %%%%%%%
-\subsection*{Data Science Intern | \normalfont{} \normalsize Worley India Private Limited \hfill \textbf{Jun 2021 --- Sep 2021}} 
+\subsection*{Data Science Intern | \normalfont{} \normalsize Worley India Private Limited \hfill \textbf{Jun 2021-Sep 2021}} 
 
     \begin{zitemize}
-        \item Performed image preprocessing techniques such as threshholding, blurring and template matching using OpenCV.
-        \item Worked with Pytesseract package and Microsoft Azure OCR API for Optical Character Recognition.
-        \item Tested the web based tool to ensure a smooth user experience.
+        \item Performed image preprocessing techniques such as threshholding, blurring and template matching using OpenCV
+        \item Utilized Pytesseract package and Microsoft Azure OCR API for Optical Character Recognition
+        \item Developed and tested a web-based tool to ensure a seemless user interaction
     \end{zitemize}
-\vspace{0.0cm}
 
 
 
@@ -211,7 +211,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%%  ACADEMIC PROJECTS
 %%%%%%% --------------------------------------------------------------------------------------
-\section{Projects} %% (Or "Research Experience", select as appropriate)
+\section{\textbf{Projects}} %% (Or "Research Experience", select as appropriate)
 \vspace{2pt}
 
 %%% ----- Best way to write items (Credit - FAANGPath)
@@ -221,48 +221,54 @@ ItalicFont=SourceSansPro-RegularIt.otf
 
 
 %%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
-\subsection*{Vulnerability Detection in Source Code | \normalfont{} \normalsize TensorFlow, NumPy, GloVe model \hfill \textbf{Aug 2022 --- present}}
+\subsection*{Vulnerability Detection in Source Code | \normalfont{} \normalsize TensorFlow, NumPy, GloVe model \hfill \textbf{Aug 2022-Mar 2023}}
     \begin{zitemize}
-    \item An application to detect vulnerabilities such as SQL Injections and Cross Site Scripting attacks in source code.
-     \item Cleaned and vectorized data using GloVe model.
-        \item Trained a Convolutional Neural Network on source code snippets.
+    \item Constructed an application to identify vulnerabilities, such as SQL Injections and  Cross-Site \newline Scripting attacks, in source code
+     \item Cleaned and vectorized 4.3 GB of data using GloVe model
+        \item Trained a Long Short Term Memory model and obtained an accuracy of 83\%
        
     \end{zitemize}
     \vspace{0.1cm}
 %%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
 \subsection*{OTC CatchUp Analysis Dashboard | \normalfont{} \normalsize Power BI, Google Data Studio, Beautiful Soup, pandas \hfill 
-\textbf{Feb 2022 --- Mar 2022}}
+\textbf{Feb 2022-Mar 2022}}
     \begin{zitemize}
-    \item A visualization dashboard to analyze OTC CatchUps --- online technical discussions of an open-to-all community. \hfill \href{https://github.com/mihikagaonkar/OTC-Dashboard/}{Code}
-| \href{https://mihikagaonkar.github.io/OTC-Dashboard/data_studio}{Demo}
-     \item Scraped and cleaned data to save it in csv files for visualizations.
-        \item Analyzed data and visualized data using PowerBI to derived results.
-       
+    \item Created a visualization dashboard to analyze OTC CatchUps-online technical discussions  \hfill \href{https://github.com/mihikagaonkar/OTC-Dashboard/}{Code}
+     \item Extracted and cleaned data for storage in csv files for visualization purposes
+     \hfill
+     \href{https://mihikagaonkar.github.io/OTC-Dashboard/data_studio}{Demo}
+        \item Conducted data analysis and created visualizations with PowerBI to obtain insights
+
+
+
+
+
     \end{zitemize}
         \vspace{0.1cm}
 %%%%%%% ----------------------------------- Role 2 ----------------------------------- %%%%%%%
-\subsection*{Book Recommendation System | \normalfont{} \normalsize Flask, NumPy, scikit-learn, Elasticsearch, Beautiful Soup, HTML, CSS  \hfill \textbf {Nov 2021 --- Jan 2022}
+\subsection*{Book Recommendation System | \normalfont{} \normalsize Flask, NumPy, scikit-learn, Elasticsearch, Beautiful Soup  \hfill \textbf {Nov 2021-Jan 2022}
 }
     \begin{zitemize}
-    \item A web application which recommends books based on already liked books by the user. \hfill \href{https://github.com/mihikagaonkar/book-recommender-system}{Code}
-     \item Scraped  Goodreads to create a dataset with over 20,000 books of different genres.
-        \item Used cosine similarity to generate Content Based Recommendations.
-        \item Used Elasticsearch to make fetching of books from the database faster. 
+    \item Developed a web application that suggests books based on previously liked books by users
+ \hfill \href{https://github.com/mihikagaonkar/book-recommender-system}{Code}
+     \item Applied web scraping on Goodreads to compile a dataset comprising more than 20,000 books spanning various genres
+        \item Employed cosine similarity for the generation of content-based recommendations
+        \item Utilized Elasticsearch to optimize retrieval speed when fetching entries from the database
     \end{zitemize}
         \vspace{0.1cm}
 %%%%%%% ----------------------------------- Role 3 ----------------------------------- %%%%%%%
-\subsection*{FakeStat | \normalfont{} \normalsize scikit-learn, NumPy, Tweepy, Django, HTML, CSS \hfill \textbf{Jan 2021 --- Mar 2021}}
+\subsection*{FakeStat | \normalfont{} \normalsize scikit-learn, NumPy, Tweepy, Django, HTML, CSS \hfill \textbf{Jan 2021-Mar 2021}}
     \begin{zitemize}
-        \item A web application and a Twitter bot to detect fake news using Random Forest model with an accuracy of 94\%. \hfill \href{https://github.com/mihikagaonkar/FakeStat}{Code}
-        \item Performed a comparative study of Random Forest, Decision Tree and Logistic Regression on the data.
-        \item The Twitter bot writes a comment to the Tweet made specifying whether the news in the Tweet is fake or not.
+        \item Crafted a web application  to detect fake news using Random Forest model with an accuracy of 94\% \hfill \href{https://github.com/mihikagaonkar/FakeStat}{Code}
+        \item Performed a comparative study between Random Forest, Decision Tree and Logistic Regression algorithms
+        \item Deployed a Twitter bot to detect fake news on the platform
     
     \end{zitemize}
         \vspace{0.1cm}
-\subsection*{Invisibility Cloak | \normalfont{} \normalsize OpenCV, Flask, HTML, CSS, Bootstrap \hfill \textbf{Oct 2020 --- Dec 2020}}
+\subsection*{Invisibility Cloak | \normalfont{} \normalsize OpenCV, Flask, HTML, CSS, Bootstrap \hfill \textbf{Oct 2020-Dec 2020}}
     \begin{zitemize}
-        \item A web application by which the user appears to be invisible on using a cloth of a specific colour.
-        \item Added a support feature to enter the RGB value of the colour of the cloth.
+        \item Designed a web application to explore image processing techniques such as thresholding, masking and contouring
+        
     \end{zitemize}
 
 
@@ -305,42 +311,18 @@ ItalicFont=SourceSansPro-RegularIt.otf
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%%  VOLUNTEER EXPERIENCE
 %%%%%%% --------------------------------------------------------------------------------------
-\section{Co-curricular activities }
+\section{\textbf{Extracurricular activities }}
 \vspace{2pt}
 %%%%%% ----------------------------------- Role 6 ----------------------------------- %%%%%%%
-\subsection*{Amazon ML Summer School \hfill Jul 2022} 
-    \begin{zitemize}
-            \item Selected for the program which covered 8 Machine Learning topics including Probabilistic Graphical Models \newline and Causal Inferencing.
-            \item Interacted with Amazon professionals and candidates all over the nation.
-    \end{zitemize}
-    \vspace{0.1cm}
-
-\subsection*{Core Team Member, GDSC TSEC \hfill 2021 --- 2022} 
-    \begin{zitemize}
-            \item Planned and organized 20+ technical events and workshops (both in-person and virtual).
-            \item Helped monitor a community with 600+ members.
-            \item Coordinated and communicated with a team of 15 members.
-    \end{zitemize}
-    \vspace{0.1cm}
-
-\subsection*{Winner, Aghaaz - IIM Ahmedabad \hfill 2023} 
-    \begin{zitemize}
-            \item Performed and won the first place in the national level Street Play competition - Aaghaaz.
-            
-    \end{zitemize}
-    \vspace{0.1cm}
-
-\subsection*{Editor, TSEC Digital Diary (College Magazine) \hfill 2020 --- 2021} 
-    \begin{zitemize}
-            \item Created content and proof read articles for the magazine.
-            
-    \end{zitemize}
-    \vspace{0.1cm}
-
-\subsection*{Volunteer, Vatsalya Trust, Mumbai \hfill  2017 --- present} 
-    \begin{zitemize}
-            \item  Taught Mathematics, Science and English to 9th and 10th grade students.
-    \end{zitemize}
+\textbf{Winner} of the national level street play competition \textbf{Aghaaz} at IIM-Ahmedabad \hfill \textbf{Jan 2023}
+\newline 
+Selected as a mentee at \textbf{Amazon ML Summer School} amongst \textbf{60000} applicants \hfill \textbf{Jul 2022}
+\newline
+Organized \textbf{15+} technical events, monitored a community of \textbf{600+} members and collaborated \newline with a team of \textbf{13} people as a  \textbf{Core Team Member of Google Developer Student Club}-TSEC. \hfill \textbf{Aug 2021-Mar2022}
+\newline
+Produced content as the \textbf{Editor} of the official college magazine, \textbf{TSEC Digital Diary} \hfill \textbf{Aug 2020-Apr 2021}
+\newline
+Volunteered at \textbf{Vatsalya Trust, Mumbai} to teach over \textbf{50} students \hfill \textbf{Mar 2017-Jun 2023}
 
 
 
